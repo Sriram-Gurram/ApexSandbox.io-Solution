@@ -1,9 +1,15 @@
 public Boolean isPrime(Integer num) {
-    if(num > 1){
-        if(Math.mod(num, (2<num<num-1)) != 0){
-            return true;
+    if(num <= 1){
+        return false;
+    } else if (num == 2){
+        return true;
+    } else {
+        for (Int i>2; i<num; i++){
+            if(Math.mod(num,i) ==0){
+                
+            }
         }
-    } else{
         return false;
     }
+
 }
