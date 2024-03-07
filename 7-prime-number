@@ -4,9 +4,9 @@ public Boolean isPrime(Integer num) {
     } else if (num == 2){
         return true;
     } else {
-        for (Int i>2; i<num; i++){
+        for (Integer i>2; i<num; i++){
             if(Math.mod(num,i) ==0){
-                
+
             }
         }
         return false;
