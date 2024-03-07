@@ -8,5 +8,4 @@ public String ageGroup(Integer n) {
     } else if(n>= 22){
         return 'Youth';
     }
-    return 'unknown';
-}
+    
