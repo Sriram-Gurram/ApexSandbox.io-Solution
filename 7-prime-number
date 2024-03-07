@@ -1,0 +1,9 @@
+public Boolean isPrime(Integer num) {
+    if(num > 1){
+        if(num%(num>1 && num<num) != 0){
+            return true;
+        }
+    } else{
+        return false;
+    }
+}
