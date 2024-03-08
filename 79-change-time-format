@@ -1,6 +1,6 @@
 public String changeTimeFormat(String strTime) {
     
-    Time time = Time.valueOf(strTime);
+    Time time = Time.valueOf(strTime +':00');
 
     String formattedtime = time.format('h:mm a');
     
