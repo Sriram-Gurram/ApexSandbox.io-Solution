@@ -2,7 +2,8 @@ public String changeTimeFormat(String strTime) {
     
     Time time = Time.valueOf(strTime);
 
-    String formattedtime = time.format('h:mm:a');
+    String formattedtime = time.format('h:mm a');
+    
     return formattedtime; 
 
 }
