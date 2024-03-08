@@ -1,0 +1,7 @@
+public String formatName(String firstName, String lastName) {
+    firstName = 'Sriram';
+    lastName = 'Gurram';
+    fullname = firstName+' '+lastName
+    return fullname;
+
+}
