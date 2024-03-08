@@ -1,7 +1,7 @@
 public Integer sumToN(Integer n) {
-    Integer Sum = 0;
+    Integer sum = 0;
     for(Integer i=1; i<=n; i++){
-        Sum = Sum+1;
-        return Sum;
+        sum = sum+1;
+        return sum;
     }
 }
