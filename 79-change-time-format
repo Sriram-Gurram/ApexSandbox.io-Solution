@@ -1,0 +1,7 @@
+public String changeTimeFormat(String strTime) {
+    Time time = Time.valueof(strTime);
+
+    String formattedtime = time.format('h:m:a');
+    return formattedtime; 
+
+}
