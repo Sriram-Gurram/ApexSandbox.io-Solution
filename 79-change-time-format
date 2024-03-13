@@ -11,6 +11,6 @@ public String changeTimeFormat(String strTime) {
     } else {
         inthours -= 12;
         String hours = string.format('%02d', inthours);
-        return hours+':'+minues +'PM';
+        return hours+':'+minutes +'PM';
     }
 }
