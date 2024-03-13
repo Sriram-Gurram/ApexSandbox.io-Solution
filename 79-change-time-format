@@ -1,9 +1,16 @@
 public String changeTimeFormat(String strTime) {
-    
-    Time time = Time.valueOf(strTime +':00');
-
-    String formattedtime = time.format('h:mm a');
-    
-    return formattedtime; 
-
+    String hours = strTime.substringBefore(':');
+    String minutes = strTime.substringAfter(':');
+    Integer inthours = Integer.valueof(hours);
+    if (inthours== 0){
+        return '12:'+minutes+'AM';
+    } else if (inthours < 12){
+        return hours+':'+ minutes +'AM';
+    } else if (inthours == 12){
+        return '12:'+minutes+'PM';
+    } else {
+        inthours -= 12;
+        String hours = string.format('%02d', inthours);
+        return hours+':'+minues +'PM';
+    }
 }
