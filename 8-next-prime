@@ -1,22 +1,20 @@
 public Integer nextPrime(Integer num) {
-    Integer nextNum = num + 1; // Start checking from the number next to num
-    
-    while (true) {
-        if (isPrime(nextNum)) {
-            return nextNum; // Return the first prime number found
-        }
-        nextNum++; // Move to the next number
+    if (num < 2) {
+        return 2;
     }
+
+    Integer candidate = num + 1;
+    while (!isPrime(candidate)) {
+        candidate += 1;
+    }
+    return candidate;
 }
 
-public Boolean isPrime(Integer num) {
-    if (num <= 1) {
-        return false; // 1 and numbers less than 1 are not prime
-    }
-    for (Integer i = 2; i * i <= num; i++) {
-        if (num % i == 0) {
-            return false; // If num is divisible by any number from 2 to sqrt(num), it's not prime
+public Boolean isPrime(Integer candidate) {
+    for (Integer i = 2; i < candidate; i++) {
+        if (Math.mod(candidate, i) == 0) {
+            return false;
         }
     }
-    return true; // If num is not divisible by any number from 2 to sqrt(num), it's prime
+    return true;
 }
