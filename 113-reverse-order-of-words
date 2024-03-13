@@ -1,5 +1,5 @@
 public String reverseWordsInASentence(String sentence){
-    public String reverseWordsInASentence(String sentence){
+    p
     if (sentence == null) {
         return null;
     } else if (sentence == '') {
@@ -17,5 +17,4 @@ public String reverseWordsInASentence(String sentence){
         }
     }
     return reversed;
-}
 }
